@@ -1,0 +1,1 @@
+Scripts no JS
