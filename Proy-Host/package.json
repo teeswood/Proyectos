@@ -1,0 +1,19 @@
+{
+  "name": "Proy-Host",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10"
+  }
+}
