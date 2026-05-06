@@ -35,6 +35,16 @@ def _load_env_file() -> None:
 
 _load_env_file()
 
+
+def _resolve_api_key() -> str:
+    """Resolve the Gemini API key from env or Streamlit Cloud secrets."""
+    if os.getenv("GEMINI_API_KEY"):
+        return os.environ["GEMINI_API_KEY"]
+    try:
+        return st.secrets["GEMINI_API_KEY"]  # populated on Streamlit Cloud
+    except Exception:
+        return ""
+
 from image_utils import (
     SUPPORTED_INPUT,
     load_image,
@@ -66,7 +76,7 @@ with st.sidebar:
 
     api_key = st.text_input(
         "Gemini API key",
-        value=os.getenv("GEMINI_API_KEY", ""),
+        value=_resolve_api_key(),
         type="password",
         help="Get one at https://aistudio.google.com/apikey",
     )
