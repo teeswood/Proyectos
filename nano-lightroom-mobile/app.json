@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Nano Lightroom",
+    "slug": "nano-lightroom-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nanolightroom.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Nano Lightroom needs access to your photos so you can pick the ones you want to grade.",
+        "NSPhotoLibraryAddUsageDescription": "Nano Lightroom saves graded photos back to your camera roll."
+      }
+    },
+    "android": {
+      "package": "com.nanolightroom.app",
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Nano Lightroom needs access to your photos so you can pick the ones you want to grade."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Nano Lightroom needs access to your photos to save graded versions.",
+          "savePhotosPermission": "Nano Lightroom saves graded photos back to your camera roll.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ]
+    ]
+  }
+}
