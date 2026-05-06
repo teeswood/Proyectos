@@ -16,6 +16,25 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
+
+def _load_env_file() -> None:
+    """Load KEY=VALUE lines from a local .env into os.environ (no extra deps)."""
+    env_path = Path(__file__).with_name(".env")
+    if not env_path.exists():
+        return
+    for line in env_path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_env_file()
+
 from image_utils import (
     SUPPORTED_INPUT,
     load_image,
