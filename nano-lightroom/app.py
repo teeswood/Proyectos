@@ -1,6 +1,8 @@
 """
-Nano Lightroom — batch photo grading via Google Nano Banana
-(Gemini 2.5 Flash Image).
+Nano Lightroom — batch photo grading.
+
+Local engine = Pillow/numpy pixel-true. AI engine = Google Nano Banana.
+Gated behind a bcrypt password (LR_USER_HASH in Streamlit secrets).
 
 Run:
     streamlit run app.py
@@ -18,7 +20,6 @@ from PIL import Image
 
 
 def _load_env_file() -> None:
-    """Load KEY=VALUE lines from a local .env into os.environ (no extra deps)."""
     env_path = Path(__file__).with_name(".env")
     if not env_path.exists():
         return
@@ -37,14 +38,15 @@ _load_env_file()
 
 
 def _resolve_api_key() -> str:
-    """Resolve the Gemini API key from env or Streamlit Cloud secrets."""
     if os.getenv("GEMINI_API_KEY"):
         return os.environ["GEMINI_API_KEY"]
     try:
-        return st.secrets["GEMINI_API_KEY"]  # populated on Streamlit Cloud
+        return st.secrets["GEMINI_API_KEY"]
     except Exception:
         return ""
 
+
+from auth import is_authenticated, sign_out
 from image_utils import (
     SUPPORTED_INPUT,
     load_image,
@@ -52,24 +54,30 @@ from image_utils import (
     resize_to_match,
     save_bytes,
 )
+from landing import render as render_landing
 from local_grader import apply as grade_local
 from nano_client import NanoClient
 from presets import PRESETS, build_prompt
+from theme import inject as inject_theme, topbar
 
 
 st.set_page_config(
     page_title="Nano Lightroom",
     page_icon="🍌",
     layout="wide",
+    initial_sidebar_state="auto",
 )
 
-st.title("Nano Lightroom")
-st.caption(
-    "Batch photo grading. Local engine applies pixel-true Lightroom-style "
-    "presets (exposure, WB, HSL, tone, grain). AI engine routes through "
-    "Google Nano Banana for prompt-driven looks. Faces and composition are "
-    "never altered."
-)
+
+# ---------- gate ----------
+if not is_authenticated():
+    render_landing()
+    st.stop()
+
+
+# ---------- authenticated app ----------
+inject_theme()
+topbar(authenticated=True, on_signout=sign_out)
 
 
 # ---------- sidebar ----------
@@ -99,11 +107,7 @@ with st.sidebar:
     st.subheader("🎨 Look")
 
     preset_names = list(PRESETS.keys())
-    preset_name = st.selectbox(
-        "Preset",
-        preset_names,
-        index=0,
-    )
+    preset_name = st.selectbox("Preset", preset_names, index=0)
     st.caption(PRESETS[preset_name]["description"])
 
     use_custom = False
@@ -142,12 +146,21 @@ with st.sidebar:
             st.markdown(
                 "- Nano Banana outputs at roughly **1024 px** on the long edge.\n"
                 "- We resize back to your original resolution and save at "
-                "**JPEG q=100, 4:4:4** (no chroma subsampling) — so file quality is "
-                "max, but pixel-level detail is what the model returned.\n"
-                "- For pixel-true detail preservation use the Local engine."
+                "**JPEG q=100, 4:4:4** — file quality is max, but pixel detail "
+                "is what the model returned.\n"
+                "- For pixel-true detail use the Local engine."
             )
     else:
-        upscale_to_original = False  # local output is already full-res
+        upscale_to_original = False
+
+
+# ---------- header ----------
+st.markdown(
+    '<h2 style="margin:0 0 0.2rem;font-weight:700;letter-spacing:-0.02em">Studio</h2>'
+    '<p style="margin:0 0 1.4rem;color:var(--text-soft);font-size:0.95rem">'
+    'Subí fotos, elegí un look, descargá el ZIP. Caras y composición intactas.</p>',
+    unsafe_allow_html=True,
+)
 
 
 # ---------- uploader ----------
@@ -233,11 +246,9 @@ if run and uploaded and (api_key or not is_ai):
 
     progress.progress(1.0, text=f"Done in {time.time() - started:.1f}s")
 
-    # ---------- gallery ----------
     if results:
         st.success(f"Processed {len(results)}/{total} photos.")
 
-        # ZIP for download
         zip_buf = io.BytesIO()
         with zipfile.ZipFile(zip_buf, "w", zipfile.ZIP_STORED) as zf:
             for name, data, _, _ in results:
