@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh pr *)",
+      "PowerShell(gh pr list --repo teeswood/Proyectos --state open --json number,title,headRefName,createdAt)",
+      "PowerShell(Invoke-RestMethod -Uri \"https://api.github.com/repos/teeswood/Proyectos/pulls?state=open\" | Select-Object number, title, @{n='branch';e={$_.head.ref}}, created_at | ConvertTo-Json)",
+      "PowerShell($prs = Invoke-RestMethod -Uri \"https://api.github.com/repos/teeswood/Proyectos/pulls?state=open\"; $prs | ForEach-Object { [PSCustomObject]@{ number = $_.number; title = $_.title; branch = $_.head.ref; created_at = $_.created_at; url = $_.html_url } } | ConvertTo-Json)"
+    ]
+  }
+}
