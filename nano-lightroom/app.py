@@ -52,6 +52,7 @@ from image_utils import (
     resize_to_match,
     save_bytes,
 )
+from local_grader import apply as grade_local
 from nano_client import NanoClient
 from presets import PRESETS, build_prompt
 
@@ -64,9 +65,10 @@ st.set_page_config(
 
 st.title("Nano Lightroom")
 st.caption(
-    "Batch photo grading powered by Google Nano Banana (Gemini 2.5 Flash Image). "
-    "Applies Lightroom-style color/tone presets without altering faces, identity, "
-    "or composition."
+    "Batch photo grading. Local engine applies pixel-true Lightroom-style "
+    "presets (exposure, WB, HSL, tone, grain). AI engine routes through "
+    "Google Nano Banana for prompt-driven looks. Faces and composition are "
+    "never altered."
 )
 
 
@@ -74,12 +76,24 @@ st.caption(
 with st.sidebar:
     st.header("⚙️ Settings")
 
-    api_key = st.text_input(
-        "Gemini API key",
-        value=_resolve_api_key(),
-        type="password",
-        help="Get one at https://aistudio.google.com/apikey",
+    engine = st.radio(
+        "Engine",
+        ["Local", "AI (Nano Banana)"],
+        index=0,
+        horizontal=True,
+        help="Local = free, deterministic, pixel-true. AI = generative, requires Gemini API key.",
     )
+    is_ai = engine == "AI (Nano Banana)"
+
+    if is_ai:
+        api_key = st.text_input(
+            "Gemini API key",
+            value=_resolve_api_key(),
+            type="password",
+            help="Get one at https://aistudio.google.com/apikey",
+        )
+    else:
+        api_key = ""
 
     st.divider()
     st.subheader("🎨 Look")
@@ -92,14 +106,16 @@ with st.sidebar:
     )
     st.caption(PRESETS[preset_name]["description"])
 
-    use_custom = st.checkbox("Override with custom prompt")
+    use_custom = False
     custom_prompt = ""
-    if use_custom:
-        custom_prompt = st.text_area(
-            "Custom grade description",
-            placeholder="e.g. cool desaturated cyberpunk grade with magenta highlights…",
-            height=120,
-        )
+    if is_ai:
+        use_custom = st.checkbox("Override with custom prompt")
+        if use_custom:
+            custom_prompt = st.text_area(
+                "Custom grade description",
+                placeholder="e.g. cool desaturated cyberpunk grade with magenta highlights…",
+                height=120,
+            )
 
     st.divider()
     st.subheader("💾 Output")
@@ -112,25 +128,26 @@ with st.sidebar:
         value=100,
         help="JPEG/WebP quality. PNG/TIFF ignore this.",
     )
-    upscale_to_original = st.checkbox(
-        "Upscale output to original resolution",
-        value=True,
-        help=(
-            "Nano Banana returns ~1024px images. Enable this to resize the graded "
-            "result back to the source resolution using LANCZOS resampling."
-        ),
-    )
-
-    st.divider()
-    with st.expander("ℹ️ About max quality"):
-        st.markdown(
-            "- Nano Banana outputs at roughly **1024 px** on the long edge.\n"
-            "- We resize back to your original resolution and save at "
-            "**JPEG q=100, 4:4:4** (no chroma subsampling) — so file quality is "
-            "max, but pixel-level detail is what the model returned.\n"
-            "- For pixel-true detail preservation use a traditional grader; "
-            "Nano Banana is generative."
+    if is_ai:
+        upscale_to_original = st.checkbox(
+            "Upscale output to original resolution",
+            value=True,
+            help=(
+                "Nano Banana returns ~1024px images. Enable this to resize the graded "
+                "result back to the source resolution using LANCZOS resampling."
+            ),
         )
+        st.divider()
+        with st.expander("ℹ️ About max quality (AI)"):
+            st.markdown(
+                "- Nano Banana outputs at roughly **1024 px** on the long edge.\n"
+                "- We resize back to your original resolution and save at "
+                "**JPEG q=100, 4:4:4** (no chroma subsampling) — so file quality is "
+                "max, but pixel-level detail is what the model returned.\n"
+                "- For pixel-true detail preservation use the Local engine."
+            )
+    else:
+        upscale_to_original = False  # local output is already full-res
 
 
 # ---------- uploader ----------
@@ -145,28 +162,35 @@ with col_a:
     run = st.button(
         "🚀 Process batch",
         type="primary",
-        disabled=not uploaded or not api_key,
+        disabled=not uploaded or (is_ai and not api_key),
     )
 with col_b:
-    if not api_key:
+    if is_ai and not api_key:
         st.warning("Add your Gemini API key in the sidebar.")
     elif not uploaded:
         st.info("Upload one or more photos to begin.")
 
 
 # ---------- processing ----------
-if run and uploaded and api_key:
-    try:
-        client = NanoClient(api_key)
-    except Exception as exc:
-        st.error(f"Could not initialize client: {exc}")
-        st.stop()
+if run and uploaded and (api_key or not is_ai):
+    client: NanoClient | None = None
+    if is_ai:
+        try:
+            client = NanoClient(api_key)
+        except Exception as exc:
+            st.error(f"Could not initialize client: {exc}")
+            st.stop()
 
-    prompt = build_prompt(preset_name, custom_prompt if use_custom else None)
-    label = "custom" if (use_custom and custom_prompt.strip()) else preset_name
+    prompt = ""
+    if is_ai:
+        prompt = build_prompt(preset_name, custom_prompt if use_custom else None)
+        with st.expander("🔍 Prompt being sent"):
+            st.code(prompt, language="markdown")
 
-    with st.expander("🔍 Prompt being sent"):
-        st.code(prompt, language="markdown")
+    label = (
+        "custom" if (is_ai and use_custom and custom_prompt.strip()) else preset_name
+    )
+    ops = PRESETS[preset_name].get("ops", {})
 
     progress = st.progress(0.0, text="Starting…")
     results: list[tuple[str, bytes, Image.Image, Image.Image]] = []
@@ -176,9 +200,10 @@ if run and uploaded and api_key:
     started = time.time()
 
     for idx, file in enumerate(uploaded, start=1):
+        engine_label = "Nano Banana" if is_ai else "local grader"
         progress.progress(
             (idx - 1) / total,
-            text=f"[{idx}/{total}] {file.name} — sending to Nano Banana…",
+            text=f"[{idx}/{total}] {file.name} — {engine_label}…",
         )
 
         try:
@@ -187,14 +212,20 @@ if run and uploaded and api_key:
             errors.append((file.name, f"Could not read: {exc}"))
             continue
 
-        result = client.edit(original, prompt)
-        if result.error or result.image is None:
-            errors.append((file.name, result.error or "Unknown error"))
-            continue
-
-        graded = result.image
-        if upscale_to_original:
-            graded = resize_to_match(graded, original)
+        if is_ai:
+            result = client.edit(original, prompt)
+            if result.error or result.image is None:
+                errors.append((file.name, result.error or "Unknown error"))
+                continue
+            graded = result.image
+            if upscale_to_original:
+                graded = resize_to_match(graded, original)
+        else:
+            try:
+                graded = grade_local(original, ops)
+            except Exception as exc:
+                errors.append((file.name, f"Local grader failed: {exc}"))
+                continue
 
         encoded = save_bytes(graded, fmt=out_format, quality=quality)
         out_name = output_filename(file.name, label, out_format)

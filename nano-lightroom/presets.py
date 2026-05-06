@@ -28,6 +28,18 @@ PRESETS: dict[str, dict] = {
             "subtle film-like roll-off in highlights. Skin remains natural and warm. "
             "Keep luminance balanced; this is a Hollywood color grade, not an Instagram filter."
         ),
+        "ops": {
+            "contrast": 12,
+            "hsl": {
+                "orange": {"h": -3, "s": 8, "l": 3},
+                "blue":   {"s": 10, "l": -5},
+                "green":  {"s": -15},
+            },
+            "color_grade": {
+                "shadows":    {"hue": 195, "sat": 18},
+                "highlights": {"hue": 30,  "sat": 12},
+            },
+        },
     },
     "Moody Dark & Earthy": {
         "description": "Deep shadows, muted greens, desaturated tones, autumnal palette.",
@@ -38,6 +50,20 @@ PRESETS: dict[str, dict] = {
             "blues toward muted slate. Add subtle warmth in shadows, cool highlights. "
             "Result feels overcast, autumnal, editorial."
         ),
+        "ops": {
+            "exposure": -0.3,
+            "saturation": -15,
+            "blacks": -8,
+            "hsl": {
+                "green":  {"h": -10, "s": -15, "l": -5},
+                "orange": {"h": -5,  "s": -10},
+                "blue":   {"s": -20, "l": -5},
+            },
+            "color_grade": {
+                "shadows":    {"hue": 30,  "sat": 6},
+                "highlights": {"hue": 200, "sat": 6},
+            },
+        },
     },
     "Bright & Airy": {
         "description": "Light, soft, low-contrast wedding/lifestyle look.",
@@ -48,6 +74,17 @@ PRESETS: dict[str, dict] = {
             "Slight pastel tint: gentle pink in highlights, soft cream in midtones. "
             "Slightly desaturate to keep tones soft. Pure clean whites preserved."
         ),
+        "ops": {
+            "exposure": 0.4,
+            "shadows": 30,
+            "highlights": -15,
+            "whites": 8,
+            "contrast": -8,
+            "saturation": -10,
+            "color_grade": {
+                "highlights": {"hue": 350, "sat": 6},
+            },
+        },
     },
     "Vintage Film (Kodak Portra 400)": {
         "description": "Warm, slightly faded, film-like grain, classic skin rendering.",
@@ -58,6 +95,18 @@ PRESETS: dict[str, dict] = {
             "soft grain, mild halation around bright areas. Saturation natural-low, "
             "yellows slightly muted, reds rich but not punchy."
         ),
+        "ops": {
+            "temp": 8,
+            "blacks": 12,
+            "contrast": -6,
+            "highlights": -8,
+            "hsl": {
+                "yellow": {"l": 8, "s": -5},
+                "red":    {"s": 8},
+                "green":  {"h": -8},
+            },
+            "grain": 6,
+        },
     },
     "Black & White Editorial": {
         "description": "High-contrast monochrome with rich tonal separation.",
@@ -67,6 +116,13 @@ PRESETS: dict[str, dict] = {
             "Deep blacks, clean whites, strong but controlled contrast, preserve midtone detail. "
             "Subtle film grain. No tinting — pure neutral monochrome."
         ),
+        "ops": {
+            "contrast": 18,
+            "blacks": -10,
+            "whites": 5,
+            "bw_mix": (0.42, 0.40, 0.18),
+            "grain": 5,
+        },
     },
     "Warm Golden Hour": {
         "description": "Sun-soaked, warm highlights, glowing skin.",
@@ -76,6 +132,17 @@ PRESETS: dict[str, dict] = {
             "warm highlights, add soft amber tint to overall image, lift shadows gently. "
             "Skin glows, light feels low and golden. Avoid orange-cast on whites — keep paper white."
         ),
+        "ops": {
+            "temp": 12,
+            "shadows": 12,
+            "hsl": {
+                "orange": {"s": 10, "l": 4},
+                "yellow": {"s": 10},
+            },
+            "color_grade": {
+                "highlights": {"hue": 35, "sat": 14},
+            },
+        },
     },
     "Cool Nordic": {
         "description": "Cool blue tones, crisp shadows, desaturated palette.",
@@ -85,6 +152,19 @@ PRESETS: dict[str, dict] = {
             "desaturate oranges and reds, keep greens slightly muted, "
             "increase clarity subtly, deepen blacks. Crisp, clean, slightly cinematic."
         ),
+        "ops": {
+            "temp": -10,
+            "blacks": -8,
+            "contrast": 6,
+            "hsl": {
+                "orange": {"s": -15},
+                "red":    {"s": -10},
+                "green":  {"s": -8},
+            },
+            "color_grade": {
+                "shadows": {"hue": 220, "sat": 12},
+            },
+        },
     },
     "Vibrant Travel": {
         "description": "Punchy, saturated, high-clarity travel/landscape look.",
@@ -94,6 +174,14 @@ PRESETS: dict[str, dict] = {
             "deepen blue skies (HSL: blue luminance down, saturation up), enrich greens, "
             "add subtle contrast S-curve. Skin tones protected — only environmental colors pop."
         ),
+        "ops": {
+            "contrast": 10,
+            "vibrance": 25,
+            "hsl": {
+                "blue":  {"s": 18, "l": -8},
+                "green": {"s": 15},
+            },
+        },
     },
     "Faded Matte": {
         "description": "Lifted blacks, low contrast, modern Instagram-matte look.",
@@ -103,6 +191,16 @@ PRESETS: dict[str, dict] = {
             "lower overall contrast, slight cyan tint in shadows, slight peach in highlights. "
             "Desaturated overall. Modern, flat, social-media editorial."
         ),
+        "ops": {
+            "blacks": 25,
+            "highlights": -10,
+            "contrast": -15,
+            "saturation": -12,
+            "color_grade": {
+                "shadows":    {"hue": 190, "sat": 10},
+                "highlights": {"hue": 25,  "sat": 8},
+            },
+        },
     },
     "High-End Skin Retouch Tone": {
         "description": "Magazine-style clean skin tone grading (no actual retouching).",
@@ -113,6 +211,15 @@ PRESETS: dict[str, dict] = {
             "balance highlights toward neutral, deepen blacks, gentle contrast, "
             "luminous midtones. Background slightly desaturated to draw eye to subject."
         ),
+        "ops": {
+            "contrast": 5,
+            "blacks": -8,
+            "saturation": -8,
+            "hsl": {
+                "red":    {"s": -12},
+                "orange": {"s": -8, "l": 3},
+            },
+        },
     },
 }
 
