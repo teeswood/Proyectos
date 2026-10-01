@@ -1,0 +1,20 @@
+{
+  "NES-OPE-PR-015": "NES-OPE-PR-015_Tendido_de_Cables_de_Potencia_BT_y_MT_V01",
+  "NES-OPE-PR-016": "NES-OPE-PR-016_Empalmes_y_Terminales_de_Media_Tension_V01",
+  "NES-OPE-PR-017": "NES-OPE-PR-017_Montaje_de_Cajas_Combinadoras_y_Tableros_DC_V01",
+  "NES-OPE-PR-018": "NES-OPE-PR-018_Montaje_y_Conexionado_de_Inversores_V01",
+  "NES-OPE-PR-019": "NES-OPE-PR-019_Montaje_de_Centros_de_Transformacion_V01",
+  "NES-OPE-PR-020": "NES-OPE-PR-020_Instalacion_de_Puesta_a_Tierra_y_Proteccion_contra_Rayos_V01",
+  "NES-OPE-PR-021": "NES-OPE-PR-021_Instalacion_de_SCADA_Comunicaciones_y_Fibra_Optica_V01",
+  "NES-OPE-PR-022": "NES-OPE-PR-022_Pruebas_y_Comisionado_del_Generador_FV_V01",
+  "NES-OPE-PR-023": "NES-OPE-PR-023_Energizacion_y_Puesta_en_Servicio_V01",
+  "NES-OPE-PR-024": "NES-OPE-PR-024_Limpieza_de_Modulos_FV_V01",
+  "NES-OPE-PR-025": "NES-OPE-PR-025_Mantenimiento_Preventivo_de_Planta_FV_V01",
+  "NES-OPE-PR-026": "NES-OPE-PR-026_Control_de_Vegetacion_V01",
+  "NES-CAL-PLN-003": "NES-CAL-PLN-003_Plan_de_Inspeccion_y_Ensayos_Electrico_V01",
+  "NES-SST-PR-001": "NES-SST-PR-001_Permisos_de_Trabajo_y_Bloqueo_y_Etiquetado_V01",
+  "NES-SST-PR-002": "NES-SST-PR-002_Trabajo_Seguro_en_Alturas_V01",
+  "NES-SST-PR-003": "NES-SST-PR-003_Izaje_de_Cargas_con_Grua_V01",
+  "NES-SST-PR-004": "NES-SST-PR-004_Trabajos_en_Caliente_V01",
+  "NES-AMB-PR-001": "NES-AMB-PR-001_Gestion_Integral_de_Residuos_V01"
+}
