@@ -68,14 +68,14 @@ No incluye la limpieza de módulos (NES-OPE-PR-024), el control de vegetación (
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía), con la NTC 2050 en lo que el RETIE adopta: seguridad de las instalaciones en operación, distancias de seguridad, puesta a tierra y competencia del personal.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes, con la NTC 2050 en lo que el RETIE adopta: seguridad de las instalaciones en operación, distancias de seguridad, puesta a tierra y competencia del personal.
 - Ley 1264 de 2008 (técnicos electricistas — CONTE); Ley 51 de 1986 y Ley 842 de 2003 (ingenieros — COPNIA).
 - Resolución 5018 de 2019 (MinTrabajo) — Lineamientos de SST en el sector eléctrico; cinco reglas de oro.
 - Decreto 1072 de 2015, Libro 2, Parte 2, Título 4, Capítulo 6 — SG-SST; Resolución 0312 de 2019 — Estándares mínimos.
 - Resolución 4272 de 2021 — Trabajo en alturas; Resolución 0491 de 2020 — Espacios confinados, cuando aplique a fosos o recintos del CT.
 - Resolución 2400 de 1979 — Estatuto de seguridad industrial; Resolución 2844 de 2007 — GATI ruido.
 - Decreto 1496 de 2018 — SGA para aceites, grasas, solventes y productos químicos de mantenimiento.
-- Decreto 1076 de 2015 — RESPEL; Resolución 2184 de 2019 — Código de colores; Ley 1672 de 2013 — RAEE.
+- Decreto 1076 de 2015 y sus modificaciones vigentes — RESPEL; Resolución 2184 de 2019 — Código de colores; Ley 1672 de 2013 — RAEE.
 - CREG 075 de 2021 y procedimientos del [OPERADOR DE RED] y de XM, para maniobras e indisponibilidades que afecten la conexión.
 - IEC 62446-1 (ensayos y documentación), IEC TS 62446-3 (termografía), IEC 61724-1 (monitoreo y desempeño), IEC 60076 (transformadores), IEC 62271 (aparamenta de MT), IEEE 81 (medición de puesta a tierra), IEC 62305 / NTC 4552 (protección contra rayos), ISO 6789 (torquímetros), NFPA 70E (referencia técnica para análisis de arco).
 - NTC-ISO 9001, NTC-ISO 14001 y NTC-ISO 45001 — Sistemas de gestión.

@@ -73,7 +73,7 @@ No incluye el tendido de los cables y sus ensayos de recepción (resistencia de 
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de producto e instalación, competencia del personal, distancias de seguridad, cinco reglas de oro y dictamen de inspección antes de energizar.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de producto e instalación, competencia del personal, distancias de seguridad, cinco reglas de oro y dictamen de inspección antes de energizar.
 - NTC 2050 — Código Eléctrico Colombiano, en los requisitos que el RETIE adopta para instalaciones de más de 1.000 V.
 - Ley 1264 de 2008 (técnicos electricistas — CONTE); Ley 51 de 1986 y Ley 842 de 2003 (ingenieros — COPNIA): matrícula profesional vigente del personal.
 - IEC 60502-2 — Cables de potencia con aislamiento extruido de 6 kV a 30 kV. IEC 60502-4 — Requisitos de ensayo de accesorios para esos cables.
@@ -86,7 +86,7 @@ No incluye el tendido de los cables y sus ensayos de recepción (resistencia de 
 - Resolución 0491 de 2020 — Espacios confinados, para empalmes en cámaras que lo sean. Resolución 4272 de 2021 — Trabajo en alturas, para terminales en estructuras elevadas.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.
 - Decreto 1496 de 2018 — SGA, para solventes, masillas, grasas de silicona y gas combustible.
-- Decreto 1076 de 2015 (RESPEL); Resolución 2184 de 2019 (código de colores); licencia ambiental y PMA del proyecto — [N° de resolución].
+- Decreto 1076 de 2015 y sus modificaciones vigentes (RESPEL); Resolución 2184 de 2019 (código de colores); licencia ambiental y PMA del proyecto — [N° de resolución].
 - NTC-ISO 9001, NTC-ISO 14001 y NTC-ISO 45001 — Sistemas de gestión.
 
 # 6. RESPONSABILIDADES

@@ -74,7 +74,7 @@ No incluye la excavación y el relleno estructural de zanjas, que se rigen por N
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de producto, de instalación, de identificación y de certificación de conductores y canalizaciones; dictamen de inspección de la instalación.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de producto, de instalación, de identificación y de certificación de conductores y canalizaciones; dictamen de inspección de la instalación.
 - NTC 2050 — Código Eléctrico Colombiano, en los requisitos que el RETIE adopta: métodos de alambrado e instalaciones subterráneas (capítulo 3), ocupación de canalizaciones (capítulo 9) y sistemas solares fotovoltaicos (artículo 690).
 - IEC 60502-1 e IEC 60502-2 — Cables de potencia con aislamiento extruido de 1 kV a 30 kV (Um 36 kV): construcción, ensayos y radios de curvatura de referencia.
 - IEC 62930 — Cables eléctricos para sistemas fotovoltaicos con tensión nominal de 1,5 kV DC.
@@ -90,7 +90,7 @@ No incluye la excavación y el relleno estructural de zanjas, que se rigen por N
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo. Resolución 2844 de 2007 — GATI ruido.
 - Decreto 1496 de 2018 — Sistema Globalmente Armonizado (SGA) para el lubricante y los solventes.
 - Ley 1503 de 2011 y Resolución 40595 de 2022 (MinTransporte) — PESV, para el transporte interno de carretes.
-- Decreto 1076 de 2015 (RESPEL); Resolución 2184 de 2019 (código de colores); Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 (RCD); licencia ambiental y PMA del proyecto — [N° de resolución].
+- Decreto 1076 de 2015 y sus modificaciones vigentes (RESPEL); Resolución 2184 de 2019 (código de colores); Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 (RCD); licencia ambiental y PMA del proyecto — [N° de resolución].
 - NTC-ISO 9001, NTC-ISO 14001 y NTC-ISO 45001 — Sistemas de gestión.
 
 # 6. RESPONSABILIDADES

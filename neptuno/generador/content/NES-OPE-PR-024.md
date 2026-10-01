@@ -70,7 +70,7 @@ No incluye la sustitución de módulos dañados, que se rige por NES-OPE-PR-010;
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía), en lo relativo a seguridad de las instalaciones fotovoltaicas en operación.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes, en lo relativo a seguridad de las instalaciones fotovoltaicas en operación.
 - IEC 61724-1 — Monitoreo del desempeño de sistemas fotovoltaicos; incluye la medición de la relación de suciedad.
 - IEC 61730 — Seguridad de módulos fotovoltaicos; IEC TS 62446-3 — Termografía en campo, cuando se use para verificar hallazgos.
 - Decreto 1072 de 2015, Libro 2, Parte 2, Título 4, Capítulo 6 — SG-SST; Resolución 0312 de 2019 — Estándares mínimos.
@@ -78,7 +78,7 @@ No incluye la sustitución de módulos dañados, que se rige por NES-OPE-PR-010;
 - Resolución 2400 de 1979 — Estatuto de seguridad industrial; arts. 388 a 392 (manejo manual de cargas).
 - Resolución 4272 de 2021 — Trabajo en alturas, cuando se limpien módulos sobre estructuras con exposición a 2 m o más.
 - Decreto 1496 de 2018 — Sistema Globalmente Armonizado (SGA) para productos químicos, si se usa algún producto de limpieza.
-- Decreto 1076 de 2015 (Sector Ambiente) — uso del recurso hídrico, concesiones de aguas, vertimientos y gestión de RESPEL.
+- Decreto 1076 de 2015 y sus modificaciones vigentes (Sector Ambiente) — uso del recurso hídrico, concesiones de aguas, vertimientos y gestión de RESPEL.
 - Resolución 2184 de 2019 — Código de colores para separación de residuos.
 - Ley 1503 de 2011 y Resolución 40595 de 2022 (MinTransporte) — Plan estratégico de seguridad vial, para vehículos y máquinas en vías internas.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.

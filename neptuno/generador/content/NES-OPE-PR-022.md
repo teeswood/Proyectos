@@ -76,7 +76,7 @@ No incluye la confección de conectores ni las pruebas DC de string que liberan 
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de instalación, producto, señalización y dictamen de inspección de la instalación antes de su energización.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de instalación, producto, señalización y dictamen de inspección de la instalación antes de su energización.
 - NTC 2050 — Código Eléctrico Colombiano, artículo 690 (Sistemas solares fotovoltaicos), en los requisitos que el RETIE adopta.
 - Ley 1264 de 2008 (técnicos electricistas — CONTE); Ley 51 de 1986 y Ley 842 de 2003 (ingenieros — COPNIA): competencia y matrícula profesional del personal que ejecuta y firma ensayos.
 - IEC 62446-1 — Sistemas fotovoltaicos: requisitos de ensayo, documentación y mantenimiento. Parte 1: sistemas conectados a la red, documentación, ensayos de puesta en servicio e inspección (edición vigente con su enmienda).

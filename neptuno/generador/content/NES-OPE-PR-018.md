@@ -75,7 +75,7 @@ NES-CAL-PLN-002 Plan de calidad; NES-SST-PLN-001 Plan de emergencias; NES-SST-PR
 
 ## 5.2. Normativa aplicable
 
-RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de producto e instalación, distancias de seguridad, certificación de producto y dictamen de inspección de la instalación antes de energizar.
+RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de producto e instalación, distancias de seguridad, certificación de producto y dictamen de inspección de la instalación antes de energizar.
 
 NTC 2050 — Código Eléctrico Colombiano, artículo 690 (Sistemas solares fotovoltaicos), en los requisitos que el RETIE adopta.
 

@@ -84,7 +84,7 @@ No incluye las actividades civiles y mecánicas (hincado, estructuras, trackers 
 
 ## 4.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de productos e instalaciones, certificación de conformidad de producto y demostración de la conformidad de la instalación mediante inspección.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de productos e instalaciones, certificación de conformidad de producto y demostración de la conformidad de la instalación mediante inspección.
 - NTC 2050 — Código Eléctrico Colombiano, en los requisitos que el RETIE adopta, en especial su sección 690 para sistemas fotovoltaicos.
 - NTC 4552 (partes 1 a 3) e IEC 62305 — Protección contra descargas eléctricas atmosféricas.
 - Resolución CREG 038 de 2014 — Código de medida, para la frontera comercial.

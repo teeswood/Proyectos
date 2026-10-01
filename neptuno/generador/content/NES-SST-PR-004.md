@@ -68,7 +68,7 @@ No incluye el trabajo en caliente dentro de espacios confinados, que requiere ad
 - Decreto 1072 de 2015, Libro 2, Parte 2, Título 4, Capítulo 6 — SG-SST, incluido el art. 2.2.4.6.25 (prevención, preparación y respuesta ante emergencias); Resolución 0312 de 2019 — Estándares mínimos.
 - Decreto 1496 de 2018 — SGA: clasificación, etiquetado y FDS de gases y productos químicos.
 - Decreto 1079 de 2015 (compila el Decreto 1609 de 2002) — Transporte terrestre automotor de mercancías peligrosas, para el transporte de cilindros por vía pública; NTC 1692 — clasificación, etiquetado y rotulado de mercancías peligrosas.
-- RETIE — Resolución 40117 de 2024 (MinEnergía) y NTC 2050, artículo 630 (soldadores eléctricos), en lo que el RETIE adopta.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes y NTC 2050, artículo 630 (soldadores eléctricos), en lo que el RETIE adopta.
 - Resolución 5018 de 2019 (MinTrabajo) — SST en procesos del sector eléctrico, cuando el trabajo se haga en instalaciones eléctricas.
 - Resolución 4272 de 2021 — Trabajo en alturas; Resolución 0491 de 2020 — Espacios confinados.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.

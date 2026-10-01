@@ -87,7 +87,7 @@ No incluye los trabajos con tensión (en caliente eléctrico) en media tensión,
 - Decreto 1072 de 2015 (Decreto Único Reglamentario del Sector Trabajo), Libro 2, Parte 2, Título 4, Capítulo 6 — SG-SST: identificación de peligros, jerarquía de controles y gestión del cambio.
 - Resolución 0312 de 2019 — Estándares mínimos del SG-SST.
 - Resolución 5018 de 2019 (MinTrabajo) — Lineamientos de SST en los procesos de generación, transmisión, distribución y comercialización de energía eléctrica: cinco reglas de oro para trabajo sin tensión, distancias de seguridad, permiso de trabajo y competencia del personal.
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de seguridad para trabajos en instalaciones eléctricas, reglas de oro, distancias de seguridad, señalización y análisis de riesgo por arco eléctrico; NTC 2050 en lo que el RETIE adopta.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de seguridad para trabajos en instalaciones eléctricas, reglas de oro, distancias de seguridad, señalización y análisis de riesgo por arco eléctrico; NTC 2050 en lo que el RETIE adopta.
 - Ley 1264 de 2008 (técnicos electricistas — CONTE); Ley 51 de 1986 y Ley 842 de 2003 (ingeniería — COPNIA).
 - Resolución 4272 de 2021 (MinTrabajo) — Requisitos mínimos de seguridad para trabajo en alturas; permiso de trabajo en alturas con lista de chequeo.
 - Resolución 0491 de 2020 (MinTrabajo) — Requisitos mínimos de seguridad para trabajos en espacios confinados; permiso de entrada.

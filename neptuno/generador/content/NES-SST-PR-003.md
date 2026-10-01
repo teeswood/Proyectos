@@ -67,7 +67,7 @@ No incluye el levantamiento de cargas con manipulador telescópico, montacargas 
 ## 5.2. Normativa aplicable
 
 - Resolución 2400 de 1979 (MinTrabajo) — Estatuto de seguridad industrial. Título de manejo y transporte de materiales, en particular: art. 415 (condiciones de aptitud del operador de grúa), art. 416 (deberes del operador; no abandonar la cabina con la carga suspendida), art. 417 (responsabilidad del operador y del señalador; verificación de la carga izada a pocos centímetros), art. 420 (evitar que la carga pase sobre personas; prohibición de permanecer bajo la carga), art. 421 (carga máxima marcada en lugar visible), art. 423 (frenos capaces de sostener 1,5 veces la carga nominal), art. 425 (limitadores de altura en aparatos eléctricos), art. 426 (examen de eslingas, cables, cadenas, ganchos y accesorios antes de usarlos) y art. 447 (factores mínimos de seguridad: 10 para ganchos, 8 para engranajes y ejes, 5 para los demás elementos).
-- RETIE — Resolución 40117 de 2024 (MinEnergía): distancias mínimas de seguridad a partes energizadas y requisitos para trabajos en proximidad.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: distancias mínimas de seguridad a partes energizadas y requisitos para trabajos en proximidad.
 - Resolución 5018 de 2019 (MinTrabajo) — Lineamientos de SST en los procesos de generación, transmisión, distribución y comercialización de energía eléctrica.
 - Decreto 1072 de 2015, Libro 2, Parte 2, Título 4, Capítulo 6 — SG-SST; Resolución 0312 de 2019 — Estándares mínimos.
 - Resolución 4272 de 2021 — Trabajo en alturas, para el aparejador que conecte o suelte cargas a 2 m o más.

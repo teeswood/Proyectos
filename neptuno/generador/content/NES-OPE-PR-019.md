@@ -94,7 +94,7 @@ No incluye la confección de empalmes y terminales de media tensión, que se rig
 - Resolución 0491 de 2020 — Espacios confinados, cuando se requiera ingresar a fosos o recintos que cumplan esa condición.
 - Decreto 1496 de 2018 — Sistema Globalmente Armonizado (SGA) para el aceite dieléctrico, solventes y demás sustancias químicas.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.
-- Decreto 1076 de 2015 — Gestión de residuos peligrosos (aceites usados, absorbentes contaminados); Resolución 2184 de 2019 — Código de colores; Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 — RCD.
+- Decreto 1076 de 2015 y sus modificaciones vigentes — Gestión de residuos peligrosos (aceites usados, absorbentes contaminados); Resolución 2184 de 2019 — Código de colores; Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 — RCD.
 - Ley 1503 de 2011 y Resolución 40595 de 2022 (MinTransporte) — Plan Estratégico de Seguridad Vial, para el transporte interno.
 - Licencia ambiental y Plan de Manejo Ambiental (PMA) del proyecto — [N° de resolución].
 - NTC-ISO 9001, NTC-ISO 14001 y NTC-ISO 45001 — Sistemas de gestión.

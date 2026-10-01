@@ -66,7 +66,7 @@ No incluye la tala o aprovechamiento forestal de árboles, que requiere el permi
 
 ## 5.2. Normativa aplicable
 
-- Decreto 1076 de 2015 (Sector Ambiente) — protección de flora y fauna, aprovechamiento forestal, recurso hídrico, quemas abiertas y RESPEL.
+- Decreto 1076 de 2015 y sus modificaciones vigentes (Sector Ambiente) — protección de flora y fauna, aprovechamiento forestal, recurso hídrico, quemas abiertas y RESPEL.
 - Licencia ambiental y PMA del proyecto — [N° de resolución].
 - Decreto 1496 de 2018 — Sistema Globalmente Armonizado (SGA) para la clasificación y etiquetado de productos químicos, aplicable a herbicidas y combustibles.
 - Normativa sanitaria y agrícola vigente sobre registro, venta, transporte, uso y disposición de plaguicidas, y sobre sanidad y movilización de animales, cuando apliquen.
@@ -74,7 +74,7 @@ No incluye la tala o aprovechamiento forestal de árboles, que requiere el permi
 - Resolución 2400 de 1979 — Estatuto de seguridad industrial (herramientas, maquinaria y manejo de cargas).
 - Resolución 2844 de 2007 — GATI ruido, para operadores de guadañadoras y tractores.
 - Resolución 4272 de 2021 — Trabajo en alturas, si se requiere poda en altura.
-- RETIE — Resolución 40117 de 2024, en lo relativo a distancias de seguridad y protección del cableado.
+- RETIE — Resolución 40117 de 2024 y sus modificaciones vigentes, en lo relativo a distancias de seguridad y protección del cableado.
 - Ley 1503 de 2011 y Resolución 40595 de 2022 (MinTransporte) — PESV, para tractores y vehículos en vías internas.
 - Resolución 2184 de 2019 — Código de colores para separación de residuos.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.

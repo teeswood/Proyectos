@@ -87,7 +87,7 @@ No incluye el montaje normal de módulos sobre trackers o estructuras a altura d
 - Resolución 0312 de 2019 — Estándares mínimos del SG-SST.
 - Resolución 2400 de 1979 — Estatuto de seguridad industrial (escaleras, andamios, plataformas).
 - Resolución 5018 de 2019 (MinTrabajo) — Lineamientos de SST en el sector eléctrico, cuando el trabajo en alturas se hace en instalaciones eléctricas.
-- RETIE — Resolución 40117 de 2024 (MinEnergía): distancias de seguridad a partes energizadas.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: distancias de seguridad a partes energizadas.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.
 - Resolución 2184 de 2019 (MinAmbiente y MinVivienda) — Código de colores para separación de residuos en la fuente.
 - Licencia ambiental y Plan de Manejo Ambiental (PMA) del proyecto — [N° de resolución].

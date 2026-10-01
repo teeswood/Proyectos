@@ -80,7 +80,7 @@ No incluye las pruebas en frío del generador fotovoltaico, de los cables y de l
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de instalaciones de generación, distancias de seguridad, trabajo en tensión y sin tensión, y demostración de la conformidad de la instalación antes de su puesta en servicio.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de instalaciones de generación, distancias de seguridad, trabajo en tensión y sin tensión, y demostración de la conformidad de la instalación antes de su puesta en servicio.
 - NTC 2050 — Código Eléctrico Colombiano, en los requisitos que el RETIE adopta.
 - Ley 143 de 1994 — Ley eléctrica; funciones del Consejo Nacional de Operación.
 - Resolución CREG 025 de 1995 — Código de Redes (código de conexión, código de operación y código de medida), con sus modificaciones.
@@ -97,7 +97,7 @@ No incluye las pruebas en frío del generador fotovoltaico, de los cables y de l
 - Resolución 5018 de 2019 (MinTrabajo) — Lineamientos de SST en los procesos de generación, transmisión, distribución y comercialización de energía eléctrica.
 - Resolución 4272 de 2021 — Trabajo en alturas; Resolución 0491 de 2020 — Espacios confinados, cuando aplique a sótanos de celdas o fosos de cables.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.
-- Decreto 1076 de 2015 (RESPEL); Resolución 2184 de 2019 (código de colores); Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 (RCD).
+- Decreto 1076 de 2015 y sus modificaciones vigentes (RESPEL); Resolución 2184 de 2019 (código de colores); Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 (RCD).
 - Licencia ambiental y Plan de Manejo Ambiental (PMA) del proyecto — [N° de resolución].
 - IEC 62446-1 — Documentación, ensayos de puesta en servicio e inspección de sistemas fotovoltaicos conectados a la red.
 - IEC 61724-1 — Monitoreo del desempeño de sistemas fotovoltaicos.

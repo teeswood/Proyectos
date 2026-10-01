@@ -94,7 +94,7 @@ No incluye la excavación y el relleno de zanjas, que se rigen por NES-OPE-PR-00
 - Resolución 4272 de 2021 — Trabajo en alturas, para captadores y bajantes en edificios y postes a 2 m o más.
 - Resolución 1401 de 2007 — Investigación de incidentes y accidentes de trabajo.
 - Decreto 1496 de 2018 — SGA, para cargas de soldadura exotérmica y compuestos de mejoramiento del suelo.
-- Decreto 1076 de 2015 (RESPEL); Resolución 2184 de 2019 (código de colores); Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 (RCD).
+- Decreto 1076 de 2015 y sus modificaciones vigentes (RESPEL); Resolución 2184 de 2019 (código de colores); Resolución 0472 de 2017 modificada por la Resolución 1257 de 2021 (RCD).
 - Licencia ambiental y Plan de Manejo Ambiental (PMA) del proyecto — [N° de resolución].
 - NTC-ISO 9001, NTC-ISO 14001 y NTC-ISO 45001 — Sistemas de gestión.
 

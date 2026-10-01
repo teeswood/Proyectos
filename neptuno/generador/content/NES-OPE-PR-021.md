@@ -81,7 +81,7 @@ No incluye la canalización civil de ductos y zanjas, que se rige por el procedi
 
 ## 5.2. Normativa aplicable
 
-- RETIE — Resolución 40117 de 2024 (MinEnergía): requisitos de instalación de tableros, puesta a tierra, protección contra sobretensiones y trabajo en instalaciones eléctricas.
+- RETIE — Resolución 40117 de 2024 (MinEnergía) y sus modificaciones vigentes: requisitos de instalación de tableros, puesta a tierra, protección contra sobretensiones y trabajo en instalaciones eléctricas.
 - NTC 2050 — Código Eléctrico Colombiano, en los requisitos que el RETIE adopta.
 - Ley 1264 de 2008 (técnicos electricistas — CONTE); Ley 51 de 1986 y Ley 842 de 2003 (ingenieros — COPNIA).
 - Resolución CREG 075 de 2021 (conexión al SIN) y procedimientos del [OPERADOR DE RED] y de XM en lo relativo a supervisión e intercambio de información, cuando apliquen.
